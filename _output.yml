@@ -1,0 +1,43 @@
+bookdown::gitbook:
+  dev: svglite
+  css: css/style.css
+  split_by: section
+  config:
+    toc:
+      collapse: section
+      scroll_highlight: yes
+      before: |
+        <li><a href="http://scientistcafe.com">Homepage</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    fontsettings:
+      theme: white
+      family: sans
+    download: [pdf, epub, mobi]
+    edit: https://github.com/happyrabbit/BusinessDS/%s
+    sharing:
+      github: true
+      linkedin: true
+      all: ['facebook',  'twitter', 'linkedin', 'weibo', 'instapaper']
+bookdown::html_chapters:
+  css: [css/style.css, css/toc.css]
+bookdown::pdf_book:
+  includes:
+    in_header: latex/preamble.tex
+    before_body: latex/before_body.tex
+    after_body: latex/after_body.tex
+  keep_tex: yes
+  highlight: tango
+  dev: "cairo_pdf"
+  latex_engine: xelatex
+  citation_package: natbib
+  template: null
+  pandoc_args: ["--top-level-division=chapter"]
+  toc_depth: 3
+  toc_unnumbered: false
+  toc_appendix: true
+  quote_footer: ["\\VA{", "}{}"]
+  highlight_bw: true
+bookdown::epub_book:
+  dev: svglite
+  stylesheet: css/style.css

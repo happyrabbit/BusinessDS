@@ -1,0 +1,59 @@
+--- 
+title: "Business Data Science"
+header-includes:
+  - \usepackage{algpseudocode}
+  - \usepackage{algorithm}
+  - \usepackage{listings}
+author: ""
+date: "`r Sys.Date()`"
+knit: "bookdown::render_book"
+documentclass: krantz
+bibliography: [bibliography.bib]
+biblio-style: apalike
+link-citations: yes
+colorlinks: yes
+lot: yes
+lof: yes
+fontsize: 12pt
+monofont: "Source Code Pro"
+monofontoptions: "Scale=0.7"
+site: bookdown::bookdown_site
+description: "Introduction to Data Science"
+url: 'http\://scientistcafe.com/BusinessDS/'
+github-repo: happyrabbit/BusinessDS
+output:
+  bookdown::pdf_book:
+    latex_engine: xelatex
+  tufte::tufte_handout:
+    latex_engine: xelatex
+---
+
+```{r include = FALSE, echo = FALSE, warning = FALSE, message = FALSE}
+# Sys.setenv(TZ="UTC")
+options(
+  htmltools.dir.version = FALSE, formatR.indent = 2,
+  width = 55, digits = 4, warnPartialMatchAttr = FALSE, warnPartialMatchDollar = FALSE
+)
+
+# package_list = c("svglite", "RANN", "proxy", "partykit", "pROC","plot3D")
+# install.packages("plot3D")
+# bookdown::render_book("index.Rmd", "bookdown::gitbook")
+# bookdown::render_book("index.Rmd", "bookdown::pdf_book")
+```
+
+# Preface{-}
+## Goal of the Book {-}
+
+## What This Book Covers {-}
+
+## Who This Book Is For {-}
+
+## How to Use This Book {-}
+
+### What the Book Assumes {-}
+
+### How to Run R and Python Code {-}
+
+## Complementary Reading {-}
+
+# About the Authors {-}
